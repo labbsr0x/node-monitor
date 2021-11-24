@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
+    <script>
+      angular.module('app', []).controller('Controller', function () {
+        this.updateHash = function () {
+          let url = new URL(window.location);
+          url.hash = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5)
+          window.history.pushState({}, 'Teste Angular', url);
+        };
+      });
+    </script>
+    <title>Teste Angular</title>
+    <style>
+      .btn {
+        margin-top: 25%;
+      }
+    </style>
+  </head>
+  <body>
+    <div ng-controller="Controller as controller">
+      <div class="App level btn">
+        <div class="level-item is-justify-content-center">
+          <a ng-click="controller.updateHash()" class="button is-primary is-outlined">Update hash</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
