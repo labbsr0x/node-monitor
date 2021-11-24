@@ -1,0 +1,19 @@
+{
+  "name": "monitor",
+  "version": "0.0.1",
+  "description": "node monitor for front metrics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labbsr0x/node-monitor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/labbsr0x/node-monitor/issues"
+  },
+  "homepage": "https://github.com/labbsr0x/node-monitor#readme"
+}
