@@ -4,6 +4,7 @@
     <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="module" src="../lib/node-monitor.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <title>Teste React</title>
     <style>
@@ -16,7 +17,11 @@
 
     <div id="app"></div>
 
-    <script type="text/babel">
+    <script type="text/babel" crossorigin>
+      import monitor from '/lib/node-monitor.mjs'
+
+      monitor();
+      
       function updateHash() {
         let url = new URL(window.location);
         url.hash = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5)
