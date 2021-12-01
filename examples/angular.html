@@ -4,7 +4,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css" />
-    <script>
+    <script type="module" crossorigin>
+      import monitor from '../lib/node-monitor.mjs'
+      monitor();
       angular.module('app', []).controller('Controller', function () {
         this.updateHash = function () {
           let url = new URL(window.location);

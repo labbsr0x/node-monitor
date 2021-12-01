@@ -1,3 +1,3 @@
-const monitor = require('./lib/node-monitor');
+'use strict';
 
-module.exports = monitor;
+module.exports = require('./lib/node-monitor.mjs');
