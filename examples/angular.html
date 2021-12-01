@@ -8,9 +8,6 @@
       import monitor from '../lib/node-monitor.mjs'
       monitor();
       angular.module('app', []).controller('Controller', function () {
-
-
-
         this.updateHash = function () {
           let url = new URL(window.location);
           url.hash = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 5)

@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-    entry: ['./test/angular.html', './test/react.html', './test/vue.html'],
+    entry: ['./examples/angular.html', './examples/react.html', './examples/vue.html'],
     output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
