@@ -1,7 +1,7 @@
 {
-  "name": "monitor",
+  "name": "@labbsr0x/node-monitor",
   "version": "0.0.1",
-  "description": "node monitor for front metrics",
+  "description": "A Prometheus middleware to add basic but very useful metrics for your Front JS app.",
   "main": "index.js",
   "type": "module",
   "scripts": {
