@@ -1,6 +1,6 @@
 {
   "name": "@labbsr0x/node-monitor",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A Prometheus middleware to add basic but very useful metrics for your Front JS app.",
   "main": "index.js",
   "type": "module",
@@ -11,8 +11,17 @@
     "type": "git",
     "url": "git+https://github.com/labbsr0x/node-monitor.git"
   },
-  "author": "",
+  "author": "Labbsr0x",
   "license": "ISC",
+  "keywords": [
+    "prometheus", 
+    "node",
+    "metrics",
+    "react",
+    "angular",
+    "vue",
+    "vanilla"
+  ],
   "bugs": {
     "url": "https://github.com/labbsr0x/node-monitor/issues"
   },
