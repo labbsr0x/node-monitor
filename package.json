@@ -2,10 +2,11 @@
   "name": "@labbsr0x/node-monitor",
   "version": "1.0.0",
   "description": "A Prometheus middleware to add basic but very useful metrics for your Front JS app.",
-  "main": "index.js",
-  "type": "module",
+  "main": "lib/monitor.min.js",
   "scripts": {
-    "test": "jest"
+    "build": "webpack",
+    "test": "jest",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
