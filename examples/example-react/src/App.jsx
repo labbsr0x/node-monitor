@@ -1,15 +1,19 @@
-
-import React, { useEffect } from 'react';
-import NodeMonitor from '@labbsr0x/node-monitor'
+import React from 'react';
+import { NodeMonitor } from '@labbsr0x/node-monitor'
 
 const App = () => {
 
-  useEffect(() => {
-    const Monitor = new NodeMonitor("Teste React");
-    console.log(Monitor);
-  }, []);
-
   const updateHash = async () => {
+
+    const object = {
+      type: 'Counter',
+      body: {
+        total: 'as',
+      }
+    }
+
+    await NodeMonitor(object);
+
     const url = new URL(window.location);
     url.hash = Math.random()
       .toString(36)
@@ -17,7 +21,7 @@ const App = () => {
       .substr(0, 5);
     window.history.pushState({}, "Teste React", url);
   }
-  
+
   return (
     <div className="App">
       <button onClick={updateHash}>Criar</button>
