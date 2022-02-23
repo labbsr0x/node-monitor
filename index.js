@@ -3,4 +3,4 @@
  * @module NodeMonitor monitor
  */
 
-module.exports = require('./src/index').default
+export default require('./src/index').default
