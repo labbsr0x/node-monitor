@@ -1,7 +1,6 @@
 import Metrics from './utils/metrics/index'
 
- export const NodeMonitor = (callback) => {
-   
+export const NodeMonitor = (callback) => {
   history.pushState = (f =>
     function pushState() {
       var ret = f.apply(this, arguments)
