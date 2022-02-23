@@ -37,4 +37,7 @@ module.exports = {
       path.join(__dirname, 'lib'),
     ],
   },
+  externals: {
+    'prom-client': 'prom-client'
+  }
 }
